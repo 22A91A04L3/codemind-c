@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,j;
+    int i,j,n;
     scanf("%d",&n);
-    if(n>=3&&n<=100)
+    if(n>=3)
     {
         for(i=1;i<=n;i++)
         {
@@ -14,7 +14,7 @@ int main()
             printf("
 ");
         }
-        for(i=n-1;i>=1;i--)
+        for(i=n-1;i>0;i--)
         {
             for(j=1;j<=i;j++)
             {
@@ -24,7 +24,7 @@ int main()
 ");
         }
     }
-    else
+    if(n<3)
     {
         printf("The pattern is not possible");
     }
